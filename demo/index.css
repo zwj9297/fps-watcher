@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+#wrapper input {
+  width: 30px;
+}
+
+#container {
+  flex: 1;
+  position: relative;
+}
+
+.ball {
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#fps {
+  position: fixed;
+  top: 0;
+  right: 10px;
+  font-size: 24px;
+}
+#fps.smooth {
+  color: green;
+}
+#fps.lag {
+  color: yellow;
+}
+#fps.laggiest {
+  color: red;
+}
+.lag-message,
+.laggiest-message {
+  display: none;
+}
+#fps.lag .lag-message {
+  display: block;
+}
+#fps.laggiest .laggiest-message {
+  display: block;
+}

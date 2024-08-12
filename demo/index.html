@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div>
+        添加 <input id="addInput" value="10" /> 个球
+        <button id="addBtn">add</button>
+        <br />
+        减少 <input id="removeInput" value="10" /> 个球
+        <button id="removeBtn">remove</button>
+        <br />
+        全部移除<button id="clearBtn">clear</button>
+      </div>
+      <div id="container"></div>
+      <div id="fps" class="smooth">
+        <div id="rate">FPS: 60 HZ</div>
+        <div class="lag-message">延迟</div>
+        <div class="laggiest-message">严重延迟</div>
+      </div>
+    </div>
+  </body>
+  <script src="../dist/fps-watcher.js"></script>
+  <script src="./index.js"></script>
+</html>

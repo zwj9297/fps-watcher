@@ -1,0 +1,45 @@
+{
+  "name": "@zwj9297/fps-watcher",
+  "version": "0.0.1",
+  "description": "A lightweight tool for monitoring browser fps that allows for easy setting of fps thresholds and alert mechanisms.",
+  "keywords": [
+    "fps"
+  ],
+  "main": "dist/fps-watcher.cjs.js",
+  "module": "dist/fps-watcher.esm.js",
+  "typings": "dist/fps-watcher.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "set NODE_ENV=developemnt && rollup -c rollup.config.js -w",
+    "build": "rimraf dist & set NODE_ENV=production && rollup -c rollup.config.js",
+    "demo": "node ./demo/server.js"
+  },
+  "author": "zwj9297",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zwj9297/fps-watcher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zwj9297/fps-watcher/issues"
+  },
+  "homepage": "https://github.com/zwj9297/fps-watcher#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/plugin-transform-runtime": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "mime-types": "^2.1.35",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.66.1",
+    "rollup-plugin-analyzer": "^4.0.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-dts": "^4.1.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.31.1",
+    "rollup-plugin-uglify": "^6.0.4",
+    "typescript": "^5.5.4"
+  }
+}
